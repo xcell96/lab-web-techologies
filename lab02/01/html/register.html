@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inregistrare</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/register_style.css">
+    </head>
+    <body>
+        <main class="page">
+            <section class="card">
+                <h1>Inregistrare</h1>
+                <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="ex:very_cool_username" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="john_doe@mai.com" required>
+                </div>
+                <div class="row two-col">
+                    <div>
+                        <label for="password">Parolă</label>
+                        <input type="password" name="password" required>
+                    </div>
+                <div>
+                    <label for="confirm_password">Confirmă parola</label>
+                    <input type="password" name="confirm_password" required>
+                </div>
+            </section>
+
+            <div class="actions">
+                <button type="submit" class="btn primary">Inregistreaza-te</button>
+                <button type="reset" class="btn ghost">Reseteaza</button>
+            </div>
+            <p class="login-link"> Ai deja cont?
+            <a href="login.html">Mergi la login</a></p>
+        </form>
+        </section>
+        </main>
+    </body>
+</html>
