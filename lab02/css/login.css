@@ -21,12 +21,12 @@ body {
 .login-image img {
   width: 70%;
   height: 70%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .separator {
   width: 5px;
-  background-color: #3471B8;
+  background-color: white;
 }
 
 .login-form {

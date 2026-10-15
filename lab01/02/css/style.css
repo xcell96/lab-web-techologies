@@ -1,31 +1,52 @@
 body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #2c363e;
+    font-family: Arial, sans-serif;
 }
 
 .login-container {
     display: flex;
-    width: 30%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 900px;
     height: 500px;
-    min-height: 100px;
+    /* background-color: #1f272d; */
+    border-radius: 12px;
+    overflow: hidden;
+    /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); */
 }
 
 .login-content {
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
+.login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 30px;
+}
+
 .login-image img {
-    width: 70%;
-    height: 90%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .separator {
-    width: 5px;
+    width: 2px;
+    margin: 50px 0;
     background-color: white;
 }
 
@@ -34,9 +55,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10em;
     padding: 40px;
-    color: transparent;
+    color: white;
 }
 
 .login-form h2 {
@@ -48,34 +68,41 @@ body {
 .login-form input {
     padding: 1em;
     margin-bottom: 1em;
-    border: 1em;
-    border-radius: 1em;
+    border: 1px solid #69747c;
+    border-radius: 8px;
     font-size: medium;
+    background-color: #2c363e;
+    color: white;
+    transition: border-color 0.2s, transform 0.1s;
 }
 
-input:focus {
-    outline: 1px solid blue;
+.login-form input:focus {
+    outline: none;
+    border-color: #3471b8;
 }
 
-input:hover {
-    transform: scale(15%);
-    transition: all .1s ease-in-out;
+.login-form input:hover {
+    transform: scale(1.02);
 }
 
 .login-form button {
     padding: 15px;
     background-color: #304e7d;
     border: none;
-    border-radius: 0px;
+    border-radius: 8px;
     color: white;
     font-size: medium;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
-/* .? {
-    background-color: 
-} */
+.login-form button:hover {
+    background-color: #3471b8;
+}
+
+.login-form button:active {
+    transform: scale(0.98);
+}
 
 .register-text {
     margin-top: 1em;
