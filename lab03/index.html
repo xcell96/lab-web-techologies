@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Project Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">CSS Project Lab</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#selectors">Selectors</a>
+      <a href="#box-model">Box Model</a>
+      <a href="#gallery">Gallery</a>
+      <a href="bootstrap-gallery.html">Bootstrap</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="intro">
+      <p class="eyebrow">HTML &amp; CSS exercises</p>
+      <h1>Learn layout by building it</h1>
+      <p>Practice CSS selectors, sizing, Flexbox, Grid and responsive design.</p>
+      <a class="primary-link" href="bootstrap-gallery.html">View Bootstrap gallery</a>
+    </section>
+
+    <section class="exercise-section" id="selectors">
+      <h2>Step 1 — CSS selectors</h2>
+      <p class="important">An important paragraph.</p>
+      <p>Inspect this paragraph in Developer Tools to see which color wins.</p>
+    </section>
+
+    <section class="exercise-section" id="box-model">
+      <h2>Step 2 — CSS Box Model</h2>
+      <p>Both cards have a declared width of 240px, 20px padding and a 4px border.</p>
+      <div class="box-demo">
+        <article class="box-card card-a">
+          <h3>content-box</h3>
+          <p>Outer width: 288px</p>
+        </article>
+        <article class="box-card card-b">
+          <h3>border-box</h3>
+          <p>Outer width: 240px</p>
+        </article>
+      </div>
+      <p class="explanation">
+        Content-box: 240 + 40 padding + 8 border = 288px.
+        Border-box: the declared 240px includes padding and border.
+      </p>
+    </section>
+
+    <section class="exercise-section" id="flexbox">
+      <h2>Step 3 — Flexbox navigation</h2>
+      <nav class="demo-nav" aria-label="Example navigation">
+        <a class="demo-brand" href="#home">Example brand</a>
+        <div class="demo-links">
+          <a href="#gallery">Gallery</a>
+          <a href="#responsive">Responsive</a>
+          <a href="bootstrap-gallery.html">Bootstrap</a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="exercise-section" id="gallery">
+      <h2>Step 4 — CSS Grid gallery</h2>
+      <div class="gallery">
+        <article class="gallery-card">
+          <span class="card-number">01</span>
+          <h3>Selectors</h3>
+          <p>Target HTML elements with CSS rules.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="card-number">02</span>
+          <h3>Box Model</h3>
+          <p>Understand content, padding, borders and margins.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="card-number">03</span>
+          <h3>Flexbox</h3>
+          <p>Align and distribute items along a flexible axis.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="card-number">04</span>
+          <h3>CSS Grid</h3>
+          <p>Create two-dimensional responsive layouts.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="card-number">05</span>
+          <h3>Responsive Design</h3>
+          <p>Adapt your page to different screen sizes.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="card-number">06</span>
+          <h3>Accessibility</h3>
+          <p>Make pages usable with keyboards and assistive technology.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="exercise-section" id="responsive">
+      <h2>Step 5 — Responsive layout</h2>
+      <div class="layout">
+        <aside class="sidebar">
+          <h3>Sidebar</h3>
+          <ul>
+            <li><a href="#selectors">Selectors</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </aside>
+        <div class="main-content">
+          <h3>Main Content</h3>
+          <p>
+            On narrow screens, the sidebar appears above the main content.
+            On wider screens, they form two columns.
+          </p>
+          <p>
+            Test keyboard navigation, browser zoom and horizontal overflow.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CSS Project Lab — Practice responsive web development.</p>
+  </footer>
+</body>
+</html>
