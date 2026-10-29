@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inregistrare</title>
+    <link rel="stylesheet" href="../css/register.css">
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1>Inregistreaza-te</h1>
+
+        <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <label for="username">Utilizator</label>
+            <input type="text" name="username" placeholder="ex:ioanaTW" required>
+          </div>
+
+          <div class="row">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="john.doe@mail.com" required>
+          </div>
+
+          <div class="row two-col">
+            <div>
+              <label for="password">Parolă</label>
+              <input type="password" name="password" required>
+            </div>
+            <div>
+              <label for="confirm_password">Confirmă parola</label>
+              <input type="password" name="confirm_password" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <label>Gen</label>
+            <div>
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">Masculin</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Feminin</label>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Altul</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="avatar">Încarcă un avatar</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+          </div>
+
+          <div class="row">
+            <label for="description">O scurtă descriere</label>
+            <textarea id="description" name="description" rows="4" maxlength="300" placeholder="Câteva lucruri despre tine..."></textarea>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Inregistreaza-te</button>
+            <button type="reset" class="btn ghost">Reseteaza</button>
+          </div>
+
+          <p class="login-link"> Ai deja cont?
+            <a href="login.html">Mergi la login</a></p>
+
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
