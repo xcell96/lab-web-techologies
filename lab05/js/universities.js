@@ -51,7 +51,7 @@ async function loadUniversities() {
 qInput.addEventListener("input", () => {
   const q = qInput.value.trim().toLowerCase();
 
-  const filtered = q
+  filtered = q
     ? all.filter(u => (u.name || "").toLowerCase().includes(q))
     : all;
 
