@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universități din România</title>
+  <link rel="stylesheet" href="../css/universities.css">
+</head>
+<body>
+  <div>
+    <h1>Universități din România</h1>
+    <label for="q">Filtru:</label>
+    <input id="q" placeholder="Caută după nume..." />
+    <button id="exportBtn">Export CSV</button>
+    <div id="status" class="status"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Nume</th>
+          <th>Țara</th>
+          <th>Site</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <script src="../js/universities.js"></script>
+</body>
+</html>
